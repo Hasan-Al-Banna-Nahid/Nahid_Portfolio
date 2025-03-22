@@ -6,7 +6,7 @@ import thareja from "@/../public/tr.png";
 const RecentProjects = () => {
   return (
     <div className="mt-16 w-full flex justify-center my-6">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {/* Project 1 Card */}
         <div className="max-w-lg rounded-lg overflow-hidden shadow-2xl bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 text-white p-6 transform hover:scale-105 hover:shadow-2xl transition-transform duration-500 hover:bg-gradient-to-br hover:from-blue-600 hover:to-purple-500">
           <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
@@ -50,8 +50,8 @@ const RecentProjects = () => {
             Project 2 - Freelancing Site
           </h3>
           <p className="text-gray-300 mb-4 text-lg">
-            A Freelance MarketPlace Under Development,built with Next.js,
-            Express.js, MongoDB, and PostgreSQL
+            A Freelance MarketPlace Under Development, built with Next.js,
+            Express.js, MongoDB, and PostgreSQL.
           </p>
           <a
             href="https://main.d2iyv1nj0eamw0.amplifyapp.com/"

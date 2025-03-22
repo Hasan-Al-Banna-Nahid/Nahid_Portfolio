@@ -15,9 +15,9 @@ import nahid from "@/../public/nahid.png";
 export default function Banner() {
   return (
     <div className="bg-gray-900 text-white p-6 shadow-lg w-full h-screen flex justify-center items-center">
-      <div className="container mx-auto grid grid-cols-3 gap-12 items-center text-center">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center">
         {/* Left Section - Tech Icons in Grid */}
-        <div className="grid grid-cols-3 gap-6 text-5xl animate-fade-in-out">
+        <div className="grid grid-cols-4 md:grid-cols-3 gap-6 text-4xl md:text-5xl animate-fade-in-out">
           <FaReact className="text-blue-500 animate-pulse" />
           <SiNextdotjs className="text-white animate-bounce" />
           <FaNodeJs className="text-green-500 animate-pulse" />
@@ -45,10 +45,10 @@ export default function Banner() {
 
         {/* Right Section - Coder Title with Glow Effect */}
         <div className="text-center animate-fade-in-out">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-glow">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text animate-glow">
             &lt;Coder&gt;
           </h1>
-          <p className="text-gray-400 text-2xl animate-fade-in">
+          <p className="text-gray-400 text-xl md:text-2xl animate-fade-in">
             Full Stack Developer Who Writes Code Efficient, Clean, Elegant
           </p>
         </div>
