@@ -84,7 +84,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Form */}
-      <div className="mt-12 w-full max-w-4xl bg-gray-900 p-8 rounded-lg shadow-lg">
+      {/* <div className="mt-12 w-full max-w-4xl bg-gray-900 p-8 rounded-lg shadow-lg">
         <h3 className="text-3xl font-semibold text-center bg-gradient-to-r from-blue-400 to-pink-400 text-transparent bg-clip-text mb-6">
           Send Me a Message
         </h3>
@@ -134,7 +134,7 @@ const Contact = () => {
             </button>
           </div>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };
