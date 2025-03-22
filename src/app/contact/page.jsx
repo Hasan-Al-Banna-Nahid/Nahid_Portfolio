@@ -13,7 +13,7 @@ const Contact = () => {
     const message = form.message.value;
     try {
       const response = await fetch(
-        "https://mail-fi72nz6fg-iamnahid591998gmailcoms-projects.vercel.app/send-mail",
+        "https://mail-frx4gc41h-iamnahid591998gmailcoms-projects.vercel.app/send-mail",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
