@@ -4,7 +4,16 @@ const nodemailer = require("nodemailer");
 
 const app = express();
 const PORT = 5000;
-app.use(cors());
+
+// Allow CORS for the specific origin (no trailing slash in the URL)
+app.use(
+  cors({
+    origin: "https://nahid-portfolio-mu.vercel.app", // Ensure no trailing slash
+    methods: ["GET", "POST", "OPTIONS"], // Explicitly allow the methods you need
+    allowedHeaders: ["Content-Type"], // Allow the headers you need
+    credentials: true, // Allow credentials (if needed)
+  })
+);
 
 // Middleware
 app.use(express.json());
@@ -16,12 +25,15 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "IamNahid591998@gmail.com", // Your Gmail address
-    pass: "ygmi atvv kwss iqjb",
+    pass: "ygmi atvv kwss iqjb", // Use an app password or environment variables for better security
   },
 });
+
+// Test Route
 app.get("/", (req, res) => {
   res.send("Hi");
 });
+
 // API Endpoint to Send Email
 app.post("/send-mail", async (req, res) => {
   const { name, email, message } = req.body;
