@@ -15,17 +15,16 @@ app.use(
   })
 );
 // Manually set CORS headers
-app.use((req, res, next) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://nahid-portfolio-mu.vercel.app"
-  ); // Your frontend URL
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS"); // Allowed methods
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); // Allowed headers
-  next();
-});
+// app.use((req, res, next) => {
+//   res.setHeader(
+//     "Access-Control-Allow-Origin",
+//     "https://nahid-portfolio-mu.vercel.app"
+//   ); // Your frontend URL
+//   res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS"); // Allowed methods
+//   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization"); // Allowed headers
+//   next();
+// });
 // Handle Preflight (OPTIONS) Requests
-app.options("*", cors());
 
 // Middleware
 app.use(express.json());
